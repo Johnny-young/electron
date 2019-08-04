@@ -1,0 +1,26 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "electron study",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnny-young/electron.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Johnny-young/electron/issues"
+  },
+  "homepage": "https://github.com/Johnny-young/electron#readme",
+  "dependencies": {
+    "electron": "^6.0.0"
+  },
+  "devDependencies": {}
+}

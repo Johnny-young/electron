@@ -4,7 +4,9 @@
   "description": "electron study",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "webpack --color --progress --config webpack.config.js",
+    "dev": "webpack-dev-server --color --progress --config webpack.config.js",
+    "electron": "electron ."
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,13 @@
   },
   "homepage": "https://github.com/Johnny-young/electron#readme",
   "dependencies": {
-    "electron": "^6.0.0"
+    "electron": "^6.0.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-dev-server": "^3.7.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-cli": "^3.3.6"
+  }
 }

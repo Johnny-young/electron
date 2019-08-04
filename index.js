@@ -1,5 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 
+// 取消警告
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = '1';
+
 let win;
 
 function createWindow() {
@@ -13,7 +16,8 @@ function createWindow() {
   })
 
   // 加载index.html
-  win.loadFile('index.html')
+  // win.loadFile('index.html')
+  win.loadURL('http://192.168.199.182:3300/')
 
   // 打开开发者工具
   // win.webContents.openDevTools()
